@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los suculentos 🌱</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="includes\css\style.css" />
+    <link rel="stylesheet" href="./includes/css/formulario.css" />
+    <link rel="stylesheet" href="./includes/css/op1.css" />
+    <link rel="stylesheet" href="./includes/css/footer.css" />
+    <link rel="stylesheet" href="includes\css\carrito.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="fixed-header">
+          <div class="fixed-menu">
+            <ul>
+              <li class="col-2"><a href="op1_Productos.html">Tienda</a></li>
+              <li class="col-2"><a href="op2.html">Servicios</a></li>
+              <li class="col-2"><a href="op3_Blog.html">Blog</a></li>
+              <li class="col-2"><a href="#">Nosotros</a></li>
+              <li class="col-2"><a href="op5_Contactanos.html">Contactanos</a></li>
+            </ul>
+          </div>
+          <a href="./index.html"><img src="includes\images\Logo.png" alt="logo" class="logo"/></a>
+          <img src="includes\images\cart.png" alt="cart" class="carrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"/>       
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Carrito de compra</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+              
+              <ul class = "imagenesCarrito">
+                <li><img src="includes\images\PlantaVenta.jpg" alt="plantaVenta"></li>
+              </ul>
+              <ul class ="descripcionproductos">
+                <li>Descripcion de producto y precio</li>
+              </ul>
+              </div>
+            </div>
+          <a href="usuario.html"
+            ><img src="includes\images\user.png" alt="user" class="usuario"
+          /></a>
+          </ul>
+          <input type="text" placeholder="Search.." class="buscador" />
+          <button type="submit" class="botonBuscar">🔎</button>
+        </div>
+      </nav>
+    </header>
+
+
+    <main class="op1">
+      <div class="contenedor">
+        <div class="encabezado">
+          <h1>Formulario de registro</h1>
+          <p>Para registrarte, completa el formulario siguiente:</p>
+        </div>
+
+        <div class="formulario">
+          <form method="post" action="#" id="formulario">
+            <div class="campo">
+              <label for="rut">RUT:</label>
+              <input type="text" id="rut" required />
+            </div>
+
+            <div class="campo">
+              <div class="en-linea izquierdo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required />
+              </div>
+
+              <div class="en-linea">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required />
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="campo">
+              <div class="en-linea izquierdo">
+                <label for="contrasena1">Contraseña:</label>
+                <input type="password" id="contrasena1" required />
+              </div>
+
+              <div class="en-linea">
+                <label for="contrasena2">Repite tu contraseña:</label>
+                <input type="password" id="contrasena2" required />
+              </div>
+            </div>
+
+            <div class="botones">
+              <input type="submit" id="boton-enviar" value="Registrarse" />
+              <p class="mensaje" id="mensaje"></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="botones">
+          <button id="boton-mostrar-datos" disabled>Mostrar datos</button>
+        </div>
+
+        <div class="division-tabla" id="division-tabla" hidden>
+          <table id="tabla-datos-guardados">
+            <thead>
+              <tr>
+                <th>RUT</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo electrónico</th>
+                <th>Contraseña</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="fixed-footer">
+        <a class="logo-footer"><img src="./includes/images/Logo pequeno.png" alt="logo"/></a>
+        <div class="container">Copyright &copy; 2016 Your Company</div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./formulario.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

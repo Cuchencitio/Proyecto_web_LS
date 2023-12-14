@@ -1,0 +1,28 @@
+.login {
+  height: 100px;
+  width: 305px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login img {
+  height: 200%;
+  position: relative;
+  right: -50px;
+  top: -20px;
+}
+.anchoboton1 {
+  width: 274px;
+  position: relative;
+  top: 12px;
+}
+.anchoboton2 {
+  width: 274px;
+  position: relative;
+  top: 24px;
+}
+.cajasombra {
+  height: 340px;
+}

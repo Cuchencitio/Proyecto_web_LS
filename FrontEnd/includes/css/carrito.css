@@ -1,0 +1,20 @@
+.imagenesCarrito img {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  left: -162px;
+}
+
+.ordenytamaño ul li {
+  position: relative;
+  left: -10px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.descripcionproductos {
+  position: relative;
+  top: -53px;
+}

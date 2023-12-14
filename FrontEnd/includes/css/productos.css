@@ -1,0 +1,28 @@
+.productos-principal{
+    margin: 10% 10% 10% 10%;
+}
+
+.productos-titulo{
+    text-align: center;
+}
+
+.productos-lista{
+    background-color: #c8fcc3;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 2% 9%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos-lista:hover{
+    border-color:#c78c19;
+}
+
+.productos-lista:active{
+    border-color:#088c19;
+}
